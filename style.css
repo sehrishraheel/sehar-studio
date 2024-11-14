@@ -1,0 +1,166 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  
+  
+  header nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Button to change background color */
+  #changeColorBtn {
+    padding: 10px 20px;
+    background-color: #e2d2df;
+    color: rgb(32, 4, 4);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #changeColorBtn:hover {
+    background-color: #917171;
+  }
+  
+  /* Quote Box */
+  #quoteBox {
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Team Members */
+  #teamMembers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  /* Contact Form */
+  form {
+    display: grid;
+    gap: 15px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  #formMessage {
+    margin-top: 20px;
+    color: green;
+  }
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #product-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .product .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+  
