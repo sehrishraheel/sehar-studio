@@ -162,5 +162,99 @@
     color: #333;
   }
 
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  /* Basic Styling */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Logo and Navbar */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wrap for smaller screens */
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Product Grid */
+  #product-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablets (Max Width: 768px) */
+  @media (max-width: 768px) {
+    /* Header Adjustments */
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* Navbar Adjustments */
+    header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Product Section Adjustments */
+    #product-section {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .logo img {
+      width: 80px; /* Adjust logo size for smaller screens */
+    }
+  }
+  
+  /* Mobiles (Max Width: 480px) */
+  @media (max-width: 480px) {
+    /* Font Size Adjustment */
+    body, header nav ul li a {
+      font-size: 16px;
+    }
+  
+    #product-section {
+      grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+  
+    .logo img {
+      width: 60px; /* Smaller logo */
+    }
+  }
   
